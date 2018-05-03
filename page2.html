@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Demo JS</title>
+    <meta name = "viewport" content = "width = device-width, initial-scale = 1">
+<!--	
+   	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  	<link rel="stylesheet" href="test.css"/>
+-->
+    <script>
+		//document.domain='n12.an.cnav';
+		//document.domain = 'synetta';
+	</script>
+
+</head>
+<body>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" ></script>
+	<!-- <script src="node_modules/jquery/dist/jquery.js" ></script> -->
+
+</script>
+ <div class="container">
+ 	<header role="header" class="row black">
+      <div class="col s12">
+      	<h1 class="white-text">Tableau de bord PAGE 2</h1>
+      </div>
+    </header>
+	
+    <main role="main">
+	
+		<div id="idTableau"></div>
+	
+	
+		<div id="idTexte">
+			<p>Recuperer un tableau via une requete AJAX et l'afficher</p>
+			<input type=button id="idBouton" value="recuperer le tableau">
+		</div>
+	
+		<a href="http://localhost/demojs/page2.html">Aller à la page 2</a>
+    </main>
+    <footer role="footer"></footer>
+ </div>
+
+
+
+
+
+ 	<script>
+	
+		function recupererTableau() {
+
+			// creation de l'objet XMLHttpRequest
+			var xhr = null;
+			if(window.XMLHttpRequest) {
+				// code for IE7+, Firefox, Chrome, Opera, Safari
+				xhr = new XMLHttpRequest(); 
+			} else if (window.ActiveXObject) {
+				// code for IE6, IE5
+				try {
+					xhr = new ActiveXObject("Msxml2.XMLHTTP");
+				} catch(e) {
+					try {
+					xhr = new ActiveXObject("Microsoft.XMLHTTP");
+					} catch(e) { }
+				}
+			} else {
+				// XMLHttpRequest non supporté par le navigateur 
+				alert("AJAX non disponible..."); 
+			}
+
+			// Traitement lorsque l'on a recu la reponse : on ecoute l'evenement readystatechange
+			xhr.onreadystatechange = function() {
+				if (this.readyState == 4) {
+					if (this.status == 200) {
+						console.log('requete OK : reponse recue', this);
+						console.log(this.response, typeof this.response);
+						document.getElementById("idTableau").innerHTML = this.responseText;
+					} else {
+						console.log('requete ERROR erreur=', this);
+					}
+				}
+			}
+
+			// ouverture de la connexion et envoi de la requete
+			xhr.open('GET', 'http://localhost:8080/quest-res/table.html');
+			xhr.send();
+
+		}
+
+		// on ecoute l'evenement click sur le bouton
+		document.getElementById('idBouton').addEventListener('click', function(event) {
+			recupererTableau();
+		} );
+
+	</script>
+
+</body>
+
+</html>
+</html>

@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <link rel="stylesheet" href="bootstrap-4.1.1-dist/css/bootstrap.css">
+      <link rel="stylesheet" href="quest.css">
+      <!-- <link rel="stylesheet" href="bootstrap-4.1.1-dist/css/bootstrap-grid.css"> -->
+      <!-- <link rel="stylesheet" href="bootstrap-4.1.1-dist/css/bootstrap-reboot.css"> -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" ></script>
+      <!-- <script src="https://code.jquery.com/jquery-1.12.4.js"></script> -->
+      <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+      <script src="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"></script>
+      <script type="text/javascript" src="test.js"></script>
+      <meta charset="utf-8" />
+      <title>Declaration de ressources</title>
+   </head>
+    <body>
+       <a href="situ-f.html"><input type="button" value="Retour"></a>
+      <h1>Vos revenus perçus en France et/ou à l'étranger des 3 mois indiqués en page 1</h1>
+      <p>(y compris ceux versès par une organisation internationale)</p>
+      <p><b>Inscrivez ci-dessous,le montant brut (en euro) de vos ressources.</b></p>
+      <form>
+            <div class="container">
+                  <div class="row">
+                        <div class="col">
+                              <b>Preciser les 3 derniers mois concernées</b> 
+                        </div>
+                        <!-- <div class="col">
+                              <div class="container">
+                                    <div class="row">
+                                          <div class="col-sm">
+                                                <select id="fstmois">
+                                                      <option value="Janvier">Janvier</option> 
+                                                      <option value="Fevrier">Fevrier</option>
+                                                      <option value="Mars">Mars</option>
+                                                      <option value="Avril">Avril</option>
+                                                      <option value="Mai">Mai</option>
+                                                      <option value="Juin">Juin</option>
+                                                      <option value="Juillet">Juillet</option>
+                                                      <option value="Aout">Aout</option>
+                                                      <option value="Septembre">Septembre</option>
+                                                      <option value="Octobre">Octobre</option>
+                                                      <option value="Novembre">Novembre</option>
+                                                      <option value="Decembre">Devembre</option>
+                                                </select>
+                                          </div>
+                                          <div class="col-sm">
+                                                <select id="secmois">
+                                                      <option value="Janvier">Janvier</option> 
+                                                      <option value="Fevrier">Fevrier</option>
+                                                      <option value="Mars">Mars</option>
+                                                      <option value="Avril">Avril</option>
+                                                      <option value="Mai">Mai</option>
+                                                      <option value="Juin">Juin</option>
+                                                      <option value="Juillet">Juillet</option>
+                                                      <option value="Aout">Aout</option>
+                                                      <option value="Septembre">Septembre</option>
+                                                      <option value="Octobre">Octobre</option>
+                                                      <option value="Novembre">Novembre</option>
+                                                      <option value="Decembre">Devembre</option>
+                                                </select>
+                                          </div>
+                                          <div class="col-sm">
+                                                <select id="thirdmois">
+                                                      <option value="Janvier">Janvier</option> 
+                                                      <option value="Fevrier">Fevrier</option>
+                                                      <option value="Mars">Mars</option>
+                                                      <option value="Avril">Avril</option>
+                                                      <option value="Mai">Mai</option>
+                                                      <option value="Juin">Juin</option>
+                                                      <option value="Juillet">Juillet</option>
+                                                      <option value="Aout">Aout</option>
+                                                      <option value="Septembre">Septembre</option>
+                                                      <option value="Octobre">Octobre</option>
+                                                      <option value="Novembre">Novembre</option>
+                                                      <option value="Decembre">Devembre</option>
+                                                </select>
+                                          </div>
+                                    </div>
+                              </div> -->
+                        </div>
+                  </div>
+            </div>
+            <div class="panel">
+                  <div class="panel-heading">
+                        <h3 class="panel-title">Revenus professionnels d'activité <a class="toogle"><input id="moreless" type="button" value="+"></a></h3>
+                  </div>      
+                  <div class="panel-body">
+                        <h4>Salaires et gains assimilés (gains assimilés : traitements, vacations, commissions)</h4>
+                        <div class="col">
+                              <div class="container">
+                                    <div class="row">
+                                          <div class="col-sm">
+                                                <select id="fstmois">
+                                                      <option value="Janvier">Janvier 2018</option> 
+                                                      <option value="Fevrier">Fevrier 2018</option>
+                                                      <option value="Mars">Mars 2018</option>
+                                                      <option value="Avril">Avril 2018</option>
+                                                      <option value="Mai">Mai 2018</option>
+                                                      <option value="Juin">Juin 2018</option>
+                                                      <option value="Juillet">Juille 2018t</option>
+                                                      <option value="Aout">Aout 2018</option>
+                                                      <option value="Septembre">Septembre 2018</option>
+                                                      <option value="Octobre">Octobre 2018</option>
+                                                      <option value="Novembre">Novembre 2018</option>
+                                                      <option value="Decembre">Devembre 2018</option>
+                                                </select>
+                                                <div class="input-group col-md-12">
+                                                      <input type="text" name="_revenusProfessionnels_salaires_0" placeholder="€">
+                                                      <!-- <div class="input-group-addon">€</div> -->
+                                                </div>
+                                          </div>
+                                          <div class="col-sm">
+                                                <select id="secmois">
+                                                      <option value="Janvier">Janvier 2018</option> 
+                                                      <option value="Fevrier">Fevrier 2018</option>
+                                                      <option value="Mars">Mars 2018</option>
+                                                      <option value="Avril">Avril 2018</option>
+                                                      <option value="Mai">Mai 2018</option>
+                                                      <option value="Juin">Juin 2018</option>
+                                                      <option value="Juillet">Juillet 2018</option>
+                                                      <option value="Aout">Aout 2018</option>
+                                                      <option value="Septembre">Septembre 2018</option>
+                                                      <option value="Octobre">Octobre 2018</option>
+                                                      <option value="Novembre">Novembre 2018</option>
+                                                      <option value="Decembre">Devembre 2018</option>
+                                                </select>
+                                                <div class="input-group col-md-12">
+                                                      <input type="text" name="_revenusProfessionnels_salaires_0" placeholder="€">
+                                                      <!-- <div class="input-group-addon">€</div> -->
+                                                </div>
+                                          </div>
+                                          <div class="col-sm">
+                                                <select id="thirdmois">
+                                                      <option value="Janvier">Janvier 2018</option> 
+                                                      <option value="Fevrier">Fevrier 2018</option>
+                                                      <option value="Mars">Mars 2018</option>
+                                                      <option value="Avril">Avril 2018</option>
+                                                      <option value="Mai">Mai 2018</option>
+                                                      <option value="Juin">Juin 2018</option>
+                                                      <option value="Juillet">Juillet 2018</option>
+                                                      <option value="Aout">Aout 2018</option>
+                                                      <option value="Septembre">Septembre 2018</option>
+                                                      <option value="Octobre">Octobre 2018</option>
+                                                      <option value="Novembre">Novembre 2018</option>
+                                                      <option value="Decembre">Devembre 2018</option>
+                                                </select>
+                                                <div class="input-group col-md-12">
+                                                      <input type="text" name="_revenusProfessionnels_salaires_0" placeholder="€">
+                                                      <!-- <div class="input-group-addon">€</div> -->
+                                                </div>
+                                          </div>
+                                    </div>
+                              </div>
+                        </div>
+                        <h4>Revenus professionnels des non-salariés (BIC, BNC, BA...)</h4>
+                        <p>Indiquez le montant annuel retenu par l'administration fiscale.</p>
+                        <div class="input-group col-md-12">
+                              <p>Dernier exercice déclaré</p>
+                              <input type="text" name="_revenusProfessionnels_salaires_0" placeholder="€">
+                        </div>     
+                  </div>
+                  <div class="panel-heading">
+                        <h3 class="panel-title">Retraites <a class="toogle"><input id="scnmoreless" type="button" value="+"></a></h3>
+                  </div>
+                        <div class="panel-body">
+                              <h4>Retraites personnelles de base</h4>
+                        <div class="col">
+                              <div class="container">
+                                    <div class="row">
+                                          <div class="col-sm">
+                                                <select id="fstmois">
+                                                      <option value="Janvier">Janvier 2018</option> 
+                                                      <option value="Fevrier">Fevrier 2018</option>
+                                                      <option value="Mars">Mars 2018</option>
+                                                      <option value="Avril">Avril 2018</option>
+                                                      <option value="Mai">Mai 2018</option>
+                                                      <option value="Juin">Juin 2018</option>
+                                                      <option value="Juillet">Juille 2018t</option>
+                                                      <option value="Aout">Aout 2018</option>
+                                                      <option value="Septembre">Septembre 2018</option>
+                                                      <option value="Octobre">Octobre 2018</option>
+                                                      <option value="Novembre">Novembre 2018</option>
+                                                      <option value="Decembre">Devembre 2018</option>
+                                                </select>
+                                                <div class="input-group col-md-12">
+                                                      <input type="text" name="_revenusProfessionnels_salaires_0" placeholder="€">
+                                                      <!-- <div class="input-group-addon">€</div> -->
+                                                </div>
+                                          </div>
+                                          <div class="col-sm">
+                                                <select id="secmois">
+                                                      <option value="Janvier">Janvier 2018</option> 
+                                                      <option value="Fevrier">Fevrier 2018</option>
+                                                      <option value="Mars">Mars 2018</option>
+                                                      <option value="Avril">Avril 2018</option>
+                                                      <option value="Mai">Mai 2018</option>
+                                                      <option value="Juin">Juin 2018</option>
+                                                      <option value="Juillet">Juillet 2018</option>
+                                                      <option value="Aout">Aout 2018</option>
+                                                      <option value="Septembre">Septembre 2018</option>
+                                                      <option value="Octobre">Octobre 2018</option>
+                                                      <option value="Novembre">Novembre 2018</option>
+                                                      <option value="Decembre">Devembre 2018</option>
+                                                </select>
+                                                <div class="input-group col-md-12">
+                                                      <input type="text" name="_revenusProfessionnels_salaires_0" placeholder="€">
+                                                      <!-- <div class="input-group-addon">€</div> -->
+                                                </div>
+                                          </div>
+                                          <div class="col-sm">
+                                                <select id="thirdmois">
+                                                      <option value="Janvier">Janvier 2018</option> 
+                                                      <option value="Fevrier">Fevrier 2018</option>
+                                                      <option value="Mars">Mars 2018</option>
+                                                      <option value="Avril">Avril 2018</option>
+                                                      <option value="Mai">Mai 2018</option>
+                                                      <option value="Juin">Juin 2018</option>
+                                                      <option value="Juillet">Juillet 2018</option>
+                                                      <option value="Aout">Aout 2018</option>
+                                                      <option value="Septembre">Septembre 2018</option>
+                                                      <option value="Octobre">Octobre 2018</option>
+                                                      <option value="Novembre">Novembre 2018</option>
+                                                      <option value="Decembre">Devembre 2018</option>
+                                                </select>
+                                                <div class="input-group col-md-12">
+                                                      <input type="text" name="_revenusProfessionnels_salaires_0" placeholder="€">
+                                                      <!-- <div class="input-group-addon">€</div> -->
+                                                </div>
+                                          </div>
+                                    </div>
+                              </div>
+                        </div>
+                        <h4>Retraites personnelles complémentaires</h4>
+                        <div class="col">
+                              <div class="container">
+                                    <div class="row">
+                                          <div class="col-sm">
+                                                <select id="fstmois">
+                                                      <option value="Janvier">Janvier 2018</option> 
+                                                      <option value="Fevrier">Fevrier 2018</option>
+                                                      <option value="Mars">Mars 2018</option>
+                                                      <option value="Avril">Avril 2018</option>
+                                                      <option value="Mai">Mai 2018</option>
+                                                      <option value="Juin">Juin 2018</option>
+                                                      <option value="Juillet">Juille 2018t</option>
+                                                      <option value="Aout">Aout 2018</option>
+                                                      <option value="Septembre">Septembre 2018</option>
+                                                      <option value="Octobre">Octobre 2018</option>
+                                                      <option value="Novembre">Novembre 2018</option>
+                                                      <option value="Decembre">Devembre 2018</option>
+                                                </select>
+                                                <div class="input-group col-md-12">
+                                                      <input type="text" name="_revenusProfessionnels_salaires_0" placeholder="€">
+                                                      <!-- <div class="input-group-addon">€</div> -->
+                                                </div>
+                                          </div>
+                                          <div class="col-sm">
+                                                <select id="secmois">
+                                                      <option value="Janvier">Janvier 2018</option> 
+                                                      <option value="Fevrier">Fevrier 2018</option>
+                                                      <option value="Mars">Mars 2018</option>
+                                                      <option value="Avril">Avril 2018</option>
+                                                      <option value="Mai">Mai 2018</option>
+                                                      <option value="Juin">Juin 2018</option>
+                                                      <option value="Juillet">Juillet 2018</option>
+                                                      <option value="Aout">Aout 2018</option>
+                                                      <option value="Septembre">Septembre 2018</option>
+                                                      <option value="Octobre">Octobre 2018</option>
+                                                      <option value="Novembre">Novembre 2018</option>
+                                                      <option value="Decembre">Devembre 2018</option>
+                                                </select>
+                                                <div class="input-group col-md-12">
+                                                      <input type="text" name="_revenusProfessionnels_salaires_0" placeholder="€">
+                                                      <!-- <div class="input-group-addon">€</div> -->
+                                                </div>
+                                          </div>
+                                          <div class="col-sm">
+                                                <select id="thirdmois">
+                                                      <option value="Janvier">Janvier 2018</option> 
+                                                      <option value="Fevrier">Fevrier 2018</option>
+                                                      <option value="Mars">Mars 2018</option>
+                                                      <option value="Avril">Avril 2018</option>
+                                                      <option value="Mai">Mai 2018</option>
+                                                      <option value="Juin">Juin 2018</option>
+                                                      <option value="Juillet">Juillet 2018</option>
+                                                      <option value="Aout">Aout 2018</option>
+                                                      <option value="Septembre">Septembre 2018</option>
+                                                      <option value="Octobre">Octobre 2018</option>
+                                                      <option value="Novembre">Novembre 2018</option>
+                                                      <option value="Decembre">Devembre 2018</option>
+                                                </select>
+                                                <div class="input-group col-md-12">
+                                                      <input type="text" name="_revenusProfessionnels_salaires_0" placeholder="€">
+                                                      <!-- <div class="input-group-addon">€</div> -->
+                                                </div>
+                                          </div>
+                                    </div>
+                              </div>
+                        </div>
+                  </div>
+                        <!--  <div class="panel-body">
+                              <h4>Retraites personnelles de base</h4>
+                               <div class="col-sm">
+                                     <div class="input-group col-md-12">
+                                          <input type="text" name="_revenusProfessionnels_salaires_0" placeholder="€">
+                                    </div>
+                              </div>
+                              <div class="col-sm">
+                                    <div class="input-group col-md-12">
+                                          <input type="text" name="_revenusProfessionnels_salaires_0" placeholder="€">
+                                    </div>
+                              </div>
+                              <div class="col-sm">
+                                    <div class="input-group col-md-12">
+                                          <input type="text" name="_revenusProfessionnels_salaires_0" placeholder="€">
+                                    </div>
+                              </div>
+                        </div> -->
+                  </div> 
+            </div>
+      </form>
+      <a href="bien.html"><input type="button" value="Vos biens"></a>
+   </body>
+</html>

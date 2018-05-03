@@ -1,0 +1,57 @@
+.panel {
+    margin-bottom: 21px;
+    background-color: #fff;
+    border: 1px solid transparent;
+    border-radius: 0;
+}
+.panel-heading{
+	background-color: #f4f4f4;
+    min-height: 45px;
+    padding: 15px;
+    border-bottom: 1px
+}
+
+
+.panel-title {
+    margin-top: 0;
+    margin-bottom: 0;
+    color: #146455;
+}
+
+.panel-body
+{
+	display: none;
+	border: 1px solid #f4f4f4;
+    border-top: 1px solid transparent;
+    padding: 15px
+}
+ .panel-body h4 {
+    font-weight: bold;
+    display: inline-block;
+    border-bottom: 1px solid #c4c4c4;
+    padding: 0 0 8px 0;
+    width: 100%;
+}
+
+.input-group {
+    position: relative;
+    display: table;
+    border-collapse: separate;
+}
+
+.input-group[class*="col-"] {
+    float: none;
+    padding-left: 0;
+    padding-right: 0;
+}
+/*euros*/
+.input-group-addon {
+    padding: 6px 12px;
+    font-size: 15px;
+    font-weight: normal;
+    line-height: 1;
+    color: #000;
+    text-align: center;
+    background-color: #f7f7f7;
+    border: 1px solid #ababab;
+    border-radius: 0;
